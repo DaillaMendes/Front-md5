@@ -10,6 +10,7 @@ import {
   Radio,
   Button,
 } from "@chakra-ui/react";
+import axios from 'axios';
 
 function App() {
   return (
@@ -56,7 +57,7 @@ function App() {
                 <Input id="email" type="email" />
               </Box>
             </HStack>
-            { <HStack spacing="4">
+            <HStack spacing="4">
               <Box w="100%">
                 <FormLabel htmlFor="nasc">Data de Nascimento</FormLabel>
                 <Input id="nasc" type="date" />
@@ -97,7 +98,7 @@ function App() {
                   </HStack>
                 </RadioGroup>
               </Box>
-            </HStack> }
+            </HStack>
             <HStack justify="center">
               <Button
                 w={240}
@@ -118,7 +119,7 @@ function App() {
                 }}
               >
                 Enviar
-    </Button>
+              </Button>
             </HStack>
           </FormControl>
         </Center>
